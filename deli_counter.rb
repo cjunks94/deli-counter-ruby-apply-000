@@ -1,5 +1,5 @@
 # Write your code here.
-
+customnum=0
 def line(arr)
   if arr.empty?
     #empty
@@ -16,16 +16,18 @@ def line(arr)
   end
 end
 
-def take_a_number(arr, str)
+def take_a_number(arr)
   if arr.empty?
     #empty
-    puts "Welcome, "+str+". You are number 1 in line."
-    arr.push(str)
+    customnum++
+    puts "Welcome, you are number 1 in line."
+    arr.push(customnum)
   else
     #non empty. self explained.
+    customnum+=
     posi=arr.length+1
-    puts "Welcome, "+str+". You are number "+posi.to_s+" in line."
-    arr.push(str)
+    puts "Welcome, You are number"+customnum+"in line."
+    arr.push(customnum)
   end
 end
 
